@@ -4,13 +4,40 @@ import styles from "./about.module.css";
 export default function AboutPage() {
   return (
     <div>
-      <div className={styles.imgContainer}>
-        <Image
-          src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          fill
-          priority
-        ></Image>
+      <div className={styles.container}>
+        <div className={styles.textContainer}>
+          <h2 className={styles.subTitle}>About Lorem</h2>
+          <h1 className={styles.title}>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </h1>
+          <p className={styles.description}>
+            Facilis repellendus facere libero doloremque nam id atque.
+            Obcaecati, assumenda quisquam? Maiores quam aperiam temporibus
+            dolorem.
+          </p>
+          <div className={styles.boxes}>
+            <div className={styles.box}>
+              <h1>10 k+</h1>
+              <p>Years of experience</p>
+            </div>
+            <div className={styles.box}>
+              <h1>10 k+</h1>
+              <p>Years of experience</p>
+            </div>
+            <div className={styles.box}>
+              <h1>10 k+</h1>
+              <p>Years of experience</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.imgContainer}>
+          <Image
+            src="/about.png"
+            alt="About image"
+            fill
+            className={styles.img}
+          />
+        </div>
       </div>
     </div>
   );
